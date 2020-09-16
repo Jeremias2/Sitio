@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!---->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Mi página</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico">
+   <link rel="stylesheet" type="text/css" href="../../../Hojas_css/hojas_css.css">
+  <link rel="stylesheet" type="text/css" href="../../../Hojas_css/menu_normal.css">
+
+ </head>
+ <body class="random">
+
+ <form method="post" action ="">
+
+ <?php               
+  
+session_start();
+$_SESSION['Pagina'] = $_SERVER['PHP_SELF'];
+
+/*
+if(isset($_SESSION['Logueado']))
+{
+require '../../../Paginas/logueado.php';
+}
+else
+{
+require '../../../Paginas/no_logueado.php';
+}
+*/
+
+?>
+
+
+<img style="position:absolute;top:40px;left:390px;" src="../../../Paginas/led_index.php">
+
+
+  <div class="contenido">
+
+<?php require'../../../Paginas/cargar_post.php'; ?>
+
+  </div> 
+   </form>
+   
+
+ <?php
+
+$indice = $max + 1;
+
+$ant = substr($url, -2, -1) + 1;
+
+$sig = substr($url, -2, -1) - 1;
+
+echo '<center>';
+echo "<font face='Verdana' color='#DBDBDB'><p>Índice</p></font>";
+echo "<br>";
+
+if(file_exists("../".$ant))
+{
+echo '<a class="href_random" href="../'.$ant.'"><<</a><font face="Verdana" color="#DBDBDB"> | </font>';
+}
+
+for($i=1;$i<$indice;$i++){
+
+$av = $indice - $i;
+if($url != "/Sitio/Posts/Random/".$av."/"){
+echo '<a style="margin-bottom:50px;" class="href_random" href="../'.$av.'">'.$i.'</a><font face="Verdana" color="#DBDBDB"> | </font>';
+}else{
+echo "<font face='Verdana' color='#DBDBDB'>".$i.' | </font>';
+}
+}
+if(file_exists("../".$sig))
+{
+echo '<a class="href_random" href="../'.$sig.'">>></a>';
+}
+echo'</center>';
+
+?>
+
+
+  
+<?php require '../../../Paginas/requerir.php'; ?>
+
+ </body>
+</html>

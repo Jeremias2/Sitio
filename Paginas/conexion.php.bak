@@ -1,0 +1,11 @@
+<?php
+
+$conexion = new mysqli ("localhost","root","","conexion");
+
+if($conexion -> connect_errno)
+{
+die ('Falló la conexión');
+}
+
+
+?>

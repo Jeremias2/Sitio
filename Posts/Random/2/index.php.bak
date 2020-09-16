@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Mi página</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../Hojas_css/hojas_css.css">
+
+ </head>
+ <body>
+ <form method="post" action ="">
+
+ <?php               
+  
+session_start();
+$_SESSION['Pagina'] = $_SERVER['PHP_SELF'];
+								          // ======================================== //
+require '../../Paginas/requerir.php';     // OBLIGATORIAMENTE REQUERIR ESTE ARCHIVO!  //
+                                          // ======================================== //
+/*
+if(isset($_SESSION['Logueado']))
+{
+require '../../Paginas/logueado.php';
+}
+else
+{
+require'../../Paginas/no_logueado.php';
+}
+*/
+
+?>
+
+
+<img style="position:absolute;top:20px;left:390px;" src="../../Paginas/led_index.php">
+
+
+  <div class="contenido">
+
+<?php require'../../Paginas/cargar_post.php'; ?>
+
+  </div> 
+   </form>
+   
+
+ <?php
+
+$indice = listarArchivos("../", $array = array());
+
+$indice = $max + 1;
+
+$url = $_SERVER['REQUEST_URI'];
+
+echo '<center>';
+echo "<font face='Verdana' color='white'><p>Índice</p></font>";
+echo "<br>";
+for($i=1;$i<$indice;$i++){
+$av = $indice - $i;
+if($url != "/Sitio/posts/".$av."/"){
+echo '<a style="margin-bottom:50px;" class="href" href="../'.$av.'">'.$i.'</a><font color="white"> | </font>';
+}else{
+echo "<font color='white'>".$i.' | </font>';
+}
+}
+echo '</center>';
+echo '<div style="margin-bottom:20px;">';
+?>
+
+</div>
+  
+ </body>
+</html>

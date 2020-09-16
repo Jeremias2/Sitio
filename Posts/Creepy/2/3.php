@@ -1,0 +1,18 @@
+<?php
+echo '
+<div class="post_Creepy">
+<h1 class="titulo">
+El reloj 
+</h1>
+<p>
+Lo último que vi fue mi reloj, marcando las 12:07 de la noche,
+mientras ella salía del armario, y me apuñalaba con sus largas uñas podridas, mientras
+utilizaba su otra mano para acallar mis gritos. Me desperté de golpe, y me alivie
+al comprobar que era un sueño, pero mientras vi que mi reloj marcaba las 12:06,
+la puerta de mi armario comenzó a abrirse. 
+</p>
+<br>
+<img class="maxImagen" src="/Sitio/Posts/Creepy/2/Imagenes/myers_clock.jpg" />
+</div>
+';
+?>

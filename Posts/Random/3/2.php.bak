@@ -1,0 +1,12 @@
+<?php
+echo "
+<div class='post_random'>
+<h1 class='titulo'>
+Mierda
+</h1>
+<p>
+Mierdax2
+</p>
+</div>
+";
+?>

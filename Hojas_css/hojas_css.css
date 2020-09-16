@@ -1,0 +1,507 @@
+@font-face {
+font-family: 'FaceYourFears';
+font-style: normal;
+font-weight: normal;
+src: url('../Fuentes/Fears_Face.ttf');
+}
+
+@font-face {
+font-family: 'Cardinal';
+font-style: normal;
+font-weight: normal;
+src: url('../Fuentes/Cardinal.ttf');
+
+}
+
+@font-face {
+font-family: 'RoughDraught';
+font-style: normal;
+font-weight: normal;
+src: url('../Fuentes/RoughDraught.ttf');
+
+}
+
+input.si{
+background:url('../Imagenes/sip.png') no-repeat;
+border:none;
+width:38px;
+height:38px;
+cursor:pointer;
+}
+
+input.no{
+background:url('../Imagenes/nop.png') no-repeat;
+border:none;
+width:38px;
+height:38px;
+cursor:pointer;
+}
+
+
+.unlogin
+{
+font-family: "Times New Roman", Times, serif;
+position:absolute;
+top: 25px;
+right: 10px;
+color: #fff;
+text-decoration:none;
+}
+
+.login
+{
+font-family: "Times New Roman", Times, serif;
+position:absolute;
+top: 0px;
+right: 0px;
+color: #fff;
+text-decoration:none;
+}
+ 
+.inputs
+{
+background: #1F2124;
+background: -moz-linear-gradient(#1F2124, #27292C);
+background: -ms-linear-gradient(#1F2124, #27292C);
+background: -o-linear-gradient(#1F2124, #27292C);
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#1F2124), to(#27292C));
+background: -webkit-linear-gradient(#1F2124, #27292C);
+background: linear-gradient(#1F2124, #27292C);
+border: 1px solid #000;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+border-radius: 3px;
+font-family: "Ubuntu", "Lato", sans-serif;
+color: #FFF;
+width: 170px;
+height: 25px;
+}
+
+.inputs:focus
+{
+box-shadow: inset 0 0 2px #000;
+background: #494D54;
+border-color: #000;
+outline: none;
+}
+
+a.a
+{
+color:#2106D0;
+text-decoration:none;
+}
+
+.left
+{
+border-top-left-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+}
+
+.right
+{
+border-top-right-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+}
+
+.right_top
+{
+border-top-right-radius: 10px 5px;
+}
+
+.right_bot
+{
+border-bottom-right-radius: 10px 5px;
+}
+
+ img.tortuga{
+  position:absolute;
+  width:304px;
+  height:220px;
+  top:70%;
+  right:40%;
+  }
+
+
+
+  img.soad{
+  position:absolute;
+  top:63%;
+  right:0%;
+   width:254px;
+  height:344px;
+  }
+
+    img.dross{
+  position:absolute;
+  top:83%;
+  right:91%;
+  -ms-transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+  }
+
+  img.choche1{
+  position:absolute;
+  top:12%;
+  right:71%;
+  -ms-transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+  }
+
+  img.choche2{
+  position:absolute;
+  top:12%;
+  right:14%;
+  -ms-transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+  }
+
+  .led{
+ position:absolute;
+ top:40px;
+ left:390px;
+  }
+
+.bienvenido{
+  font-family:Impact;
+  color:white;
+  font-size:50px;
+  position:absolute;
+  top:40%;
+  right:42%;
+  }
+
+.Tabla
+{
+color:#fff;
+font-family:  'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+font-size:120%;
+margin: 0 auto;
+text-align: left;
+}
+
+.Textarea{
+border-radius: 10px;
+font-family:'Verdana';
+}
+
+body.random
+ {
+ background-attachment:fixed;
+ background-image:url('http://img.webme.com/pic/c/cssplantillas/greybutter01.png');
+ overflow: auto;
+ }
+
+ body.creepy
+ {
+ background-attachment:fixed;
+ background-image:url('../Paginas/fondo.png');
+ overflow: auto
+ }
+
+ 
+
+.titulo
+{
+color:#fff;
+	font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+
+#todo{
+position:relative;
+top:90px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 90px;
+background-color:black;
+background: url('http://assets.tumblr.com/themes/redux/shadow-post.png') top center no-repeat transparent;
+width: 820px;
+height:auto;
+padding:5px;
+}
+
+#todo #comentario_random{
+
+width: 550px;
+height:auto;
+min-height:500px;
+border: 1px solid rgba(0,0,0,1);
+padding: 5px;
+background-color: rgba(20,20,20,0.8);
+
+
+position:relative;
+bottom:0%;
+right:5px;
+margin-top:50px;
+ }
+
+#todo #contenido{
+border-radius: 80px 20px;
+width: 800px;
+height:auto;
+min-height:100px;
+border: 1px solid rgba(211,211,211,0);
+padding: 5px;
+background-color: rgba(211,211,211,0.1);
+text-align:center;
+}
+
+
+#autor{
+width:90px;
+height:100%;
+margin-top:6px;
+margin-left:-111px;
+float:left;
+}
+            
+#autor_icon {
+height:90px;
+width:90px;
+margin-left:-5px;
+}
+            
+#refloat {
+height:64px;
+width:64px;
+padding:13px 0 0 13px;
+position:absolute;
+}
+
+#refloat img{
+height:64px;
+width:64px;
+}
+            
+#cover {
+height:90px;
+width:90px;
+background-image: url("http://static.tumblr.com/tt9qf5k/uwom9b46t/retratobrpfinal.png");
+background-repeat: no-repeat;
+position:absolute;
+}
+            
+#nombre {
+height:18px;
+min-width:110px;
+width:100%;
+margin:0 0 5px -15px;
+text-align:center;
+color:#fff;
+font-size:11px;
+text-transform:lowercase;
+background-color:#000;
+}
+
+.icon_com{
+height:90px;
+width:90px;
+margin-left:-5px;
+}
+
+.icon_com .img_com {
+height:30px;
+width:30px;
+padding:13px 0 0 13px;
+position:absolute;
+float:left;
+}
+
+
+.post_Random
+{
+margin-left: auto;
+margin-right: auto;
+width: 720px;
+height: auto;
+min-height:123px;
+border-radius: 10px 10px 10px 10px;
+background-color: #DFDFDF;
+background-color: rgba(211,211,211,0.2);
+border: 1px solid rgba(211,211,211,0);
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family:Verdana, Geneva, sans-serif;
+color:#fff;
+line-height:150%;
+}
+
+.post_Creepy
+{
+
+margin-left: auto;
+margin-right: auto;
+width: 720px;
+height: auto;
+min-height:123px;
+max-width: 800px;
+border-radius: 10px 10px 10px 10px;
+background-color: rgba(211,211,211,0.1);
+border: 1px solid rgba(211,211,211,0);
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: 'RoughDraught';
+font-size:120%;
+color:#A5A5A5;
+line-height:150%;
+}
+
+.post_Random p{
+margin-left:25px;
+margin-right:35px;
+}
+
+.post_Creepy p{
+text-align:left;
+margin-left:25px;
+margin-right:35px;
+}
+
+#todo #indice{
+position:absolute;
+bottom:0%;
+right:5px;
+margin-bottom:-55px;
+}
+
+#todo #indice .selected_Random{
+font-family:Verdana, Geneva, sans-serif;
+background-color: rgba(255,255,255, 0.1);
+border: 2px solid #fff;
+padding:3px 8px;
+margin: 0 0 0 4px;
+cursor: default;
+color:#DBDBDB;
+font-size:150%;
+}
+
+#todo #indice .selected_Creepy{
+font-family:FaceYourFears;
+background-color: #320000;
+border: 2px solid #900000;
+padding:3px 8px;
+margin: 0 0 0 4px;
+cursor: default;
+color:#620303;
+font-size:150%;
+}
+
+.caracter_Random{
+font-family:'Verdana';
+color:#DBDBDB;
+font-size:150%;
+}
+
+.caracter_Creepy{
+font-family:'FaceYourFears';
+color:#620303;
+font-size:150%;
+}
+
+a.href_Random{
+text-decoration:none;
+color: #DBDBDB;
+font-family:Verdana;
+font-size:150%;
+}
+
+a.href_Creepy{
+text-decoration:none;
+color: #620303;
+font-family:FaceYourFears;
+font-size:150%;
+}
+
+a.href_Random:hover{
+color: #000;
+padding: 3px 8px;
+background-color:#fff;
+border: 3px solid #000;
+}
+
+a.href_Creepy:hover{
+color: #320000;
+padding: 3px 8px;
+background-color: #900000;
+border: 3px solid #320000;
+}
+
+input.boton
+{
+font-size:15px;
+font-family:Verdana,Helvetica;
+font-weight:bold;
+border: 1px solid #000;
+color:white;
+border-radius: 3px;
+background:#181818;
+border:0px;
+width:100px;
+height:40px;
+cursor:pointer;
+}
+
+a.href{
+text-decoration:none;
+color: #DBDBDB;
+font-family:Verdana;
+font-size:100%;
+}
+
+img.maxImagen{
+min-width:650px;
+max-width:650px;
+max-height:auto;
+margin-top:40px;
+margin-bottom:40px;
+}
+
+img.minImagen{
+min-width:100px;
+max-width:100px;
+min-height:100px;
+max-height:100px;
+float:left;
+}
+
+div.sesion
+{
+text-align:center;
+}
+
+div.sesion table
+{
+width: 340px;
+height:50px;
+border: 1px solid #000;
+background-color: #000;
+text-align: center;
+font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+margin:0 auto;
+
+
+}
+
+.sesion table td:hover
+{
+background-color: #434343;
+cursor:pointer;
+}
+
+.sesion table td a
+{
+text-decoration:none;
+color:#fff;
+}
+                            
